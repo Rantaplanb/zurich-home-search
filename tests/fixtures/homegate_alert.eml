@@ -1,0 +1,26 @@
+From: Homegate Alerts <searchalert@homegate.ch>
+Subject: New Homegate alert for Zurich
+Date: Sat, 05 Apr 2026 18:15:00 +0200
+Message-ID: <alert-1@example.com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="===============123456789=="
+
+--===============123456789==
+Content-Type: text/plain; charset="utf-8"
+
+New listing found for your saved Zurich search.
+
+Wohnung mit grossem Balkon umgeben mit viel Rasenflaeche, neue Kueche
+https://www.homegate.ch/rent/4003058517
+
+--===============123456789==
+Content-Type: text/html; charset="utf-8"
+
+<html>
+  <body>
+    <p>New listing found for your saved Zurich search.</p>
+    <a href="https://www.homegate.ch/rent/4003058517">Open listing</a>
+  </body>
+</html>
+
+--===============123456789==--

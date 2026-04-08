@@ -1,0 +1,34 @@
+version: "3"
+
+tasks:
+  setup:
+    cmds:
+      - uv sync
+
+  imap-check:
+    cmds:
+      - uv run homegate-triage-assistant imap-check
+
+  run:
+    cmds:
+      - uv run homegate-triage-assistant run
+
+  gmail-auth:
+    cmds:
+      - uv run homegate-triage-assistant gmail-auth
+
+  gmail-check:
+    cmds:
+      - uv run homegate-triage-assistant gmail-check
+
+  triage-once:
+    cmds:
+      - uv run homegate-triage-assistant triage-once
+
+  rescore:
+    cmds:
+      - uv run homegate-triage-assistant rescore
+
+  test:
+    cmds:
+      - uv run pytest

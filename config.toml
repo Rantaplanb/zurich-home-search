@@ -1,0 +1,62 @@
+[app]
+database_path = "data/homegate_triage.db"
+poll_interval_seconds = 60
+host = "127.0.0.1" 
+port = 8000
+
+[search]
+location = "Zurich"
+office_address = "Beethovenstrasse 48, Zurich"
+max_total_cost_chf = 1800
+desired_move_in_min_weeks = 2
+desired_move_in_max_weeks = 8
+acceptable_move_in_max_weeks = 12
+
+[homegate]
+alert_sender_contains = "homegate"
+alert_subject_contains = "alert"
+chrome_channel = "chrome"
+chrome_user_data_dir = "~/Library/Application Support/Google/Chrome"
+chrome_profile_copy_dir = "data/chrome-profile-copy"
+headless = false
+timeout_seconds = 25
+
+[imap]
+host = ""
+port = 993
+username = ""
+password = ""
+mailbox = "INBOX"
+search_query = "UNSEEN"
+use_ssl = true
+
+[gmail]
+token_path = "data/gmail_tokens.json"
+query = "from:homegate newer_than:14d"
+max_results = 20
+auth_port = 8765
+open_browser = true
+
+[openai]
+model = "gpt-5.4"
+max_output_tokens = 700
+
+[notifications]
+enabled = true
+channel = "desktop"
+
+[transport]
+base_url = "https://transport.opendata.ch/v1/connections"
+enabled = true
+
+[weights]
+total_cost_per_month = 20
+proximity_to_office_beethovenstrasse_48 = 16
+vfm = 14
+size = 12
+alone_or_with_roommates = 10
+proximity_to_public_transport = 8
+move_in_date_fit = 7
+kitchen_quality = 5
+condition = 4
+proximity_to_big_supermarket = 4
